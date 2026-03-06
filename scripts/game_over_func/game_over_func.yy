@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"game_over_func",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"game_over_func",
+  "parent":{
+    "name":"RaceForLife",
+    "path":"RaceForLife.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

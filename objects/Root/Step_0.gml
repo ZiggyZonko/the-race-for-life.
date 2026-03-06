@@ -52,10 +52,11 @@ target_y = max(target_y, 0);
 camera_set_view_pos(cam, target_x, target_y);
 
 /// --- LEVEL UP AND HP GAIN ---
-var new_level = floor(points / points_per_level) + 1;
+var new_level = floor(global.points / points_per_level) + 1;
 if (new_level > level)
 {
     level = new_level;
+	show_debug_message("NEW LEVEL!");
 
     // Only increase HP if below max
     if (hp < max_hp)
@@ -69,7 +70,7 @@ if (new_level > level)
 }
 
 /// --- BOSS SPAWN (optional) ---
-if (points >= 1000 && !instance_exists(obj_boss))
+if (global.points >= 1000 && !instance_exists(obj_boss))
 {
     instance_create_layer(x, y + 800, "Instances", obj_boss);
 }
@@ -91,3 +92,7 @@ var border_width = 16; // Width of visible side tiles
 x = clamp(x, border_width, room_width - border_width);
 
 if (attack_cooldown > 0) attack_cooldown -= 1;
+
+if (hp <= 0) {
+	game_over_func()
+}

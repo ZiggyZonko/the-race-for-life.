@@ -18,8 +18,16 @@ if (instance_exists(root)) {
 
     // Draw Level
     draw_set_color(c_white);
+<<<<<<< HEAD
     draw_text(40, 90, "Level: " + string(Root.level));
     
     // Optional: Draw Score smaller underneath
     draw_text(40, 110, "Points: " + string(Root.points));
+=======
+    draw_text(40, 90, "LEVEL: " + string(Root.level));
+    
+    // Optional: Draw Score smaller underneath
+    draw_text(40, 110, "POINTS: " + string(global.points));
+	draw_text(58, 130, "HI-SCORE: " + string(global.highscore));
+>>>>>>> a2354ed (First Commit)
 }
