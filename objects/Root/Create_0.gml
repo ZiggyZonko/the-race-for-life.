@@ -4,11 +4,6 @@ downward_force = 1.5;
 max_hp = 3;
 hp = 3;
 
-<<<<<<< HEAD
-points = 0;
-
-=======
->>>>>>> a2354ed (First Commit)
 level = 1;
 points_per_level = 200;
 
@@ -21,8 +16,6 @@ last_trail_x = x;
 last_trail_y = y;
 
 invincible = false;
-<<<<<<< HEAD
-=======
 
 global.points = 0;
 global.highscore = 0;
@@ -35,7 +28,6 @@ if (file_exists(_file)) {
     ini_close();
 }
 
->>>>>>> a2354ed (First Commit)
 invincible_timer = 0;
 invincible_time = 60; // 1 second at 60fps
 

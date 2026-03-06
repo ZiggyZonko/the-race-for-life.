@@ -1,9 +1,8 @@
 function game_over_func(){
+	
 	audio_stop_all()
 	show_message("The seed has died...");
 	audio_play_sound(GameOver, 10, false);
-	
-	
 	
 	if (global.points > global.highscore)
 	{
