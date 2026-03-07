@@ -11,6 +11,6 @@ if (attack_cooldown <= 0) {
     attack_inst.direction = image_angle - 90;
     attack_inst.image_angle = attack_inst.direction;
 
-    attack_cooldown = 30; // cooldown (~0.25s at 60fps)
+    attack_cooldown = fire_rate ; // cooldown (~0.25s at 60fps)
 	audio_play_sound(AttSound, 10, false);
 }

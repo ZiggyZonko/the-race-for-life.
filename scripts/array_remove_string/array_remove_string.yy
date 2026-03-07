@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"game_over_func",
+  "%Name":"array_remove_string",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"game_over_func",
+  "name":"array_remove_string",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

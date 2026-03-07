@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"game_over_func",
+  "%Name":"apply_upgrade",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"game_over_func",
+  "name":"apply_upgrade",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

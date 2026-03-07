@@ -15,3 +15,5 @@ nutrient_spawn_interval = 180;
 next_chunk_y = 384 + 16;
 spawn_dirt_chunk(next_chunk_y);
 next_chunk_y += chunk_height_pixels;
+
+nutrient_count = 5;

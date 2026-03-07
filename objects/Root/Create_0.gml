@@ -17,6 +17,8 @@ last_trail_y = y;
 
 invincible = false;
 
+nutrient_multiplier = 1
+
 global.points = 0;
 global.highscore = 0;
 var _file = "highscore.ini";
@@ -32,3 +34,5 @@ invincible_timer = 0;
 invincible_time = 60; // 1 second at 60fps
 
 attack_cooldown = 0;
+
+fire_rate = 30;

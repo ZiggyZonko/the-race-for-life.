@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"spawn_dirt_chunk",
   "parent":{
-    "name":"RaceForLife",
-    "path":"RaceForLife.yyp",
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

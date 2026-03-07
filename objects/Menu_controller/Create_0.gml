@@ -7,3 +7,5 @@ button_width = 350;
 button_height = 100;
 button_play_y = room_height / 2;
 button_quit_y = room_height / 2 + 140;
+
+global.game_paused = false;

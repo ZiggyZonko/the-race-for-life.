@@ -1,4 +1,4 @@
-/// obj_spawner Step Event
+if (global.game_paused) exit;
 
 // --- GET PLAYER ROOT ---
 var root = instance_find(Root, 0);
@@ -17,16 +17,8 @@ if (cam_y + cam_h + 200 > next_chunk_y)
     // Calculate player depth
     var downdis = (instance_exists(root)) ? root.y : 0;
 
-    // --- SPAWN NUTRIENTS ---
-    var nutrient_count = 5;
-
-    // (nutrient spawning code here)
-	// --- SPAWN NUTRIENTS ---
-var nutrient_count = 5;
-
-// Sprite pools
-var primary_sprites = [Phosphorus, Nitrate];
-var secondary_sprites = [Zinc, Copper, Iron, Mg];
+	var primary_sprites = [Phosphorus, Nitrate];
+	var secondary_sprites = [Zinc, Copper, Iron, Mg];
 
 for (var i = 0; i < nutrient_count; i++)
 {

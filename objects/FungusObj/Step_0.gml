@@ -1,3 +1,9 @@
+if (global.game_paused)
+{
+    speed = 0;
+    return;
+}
+
 var root = instance_find(Root, 0);
 
 if (instance_exists(root))

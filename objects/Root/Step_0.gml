@@ -1,3 +1,4 @@
+if (global.game_paused) exit;
 /// --- MOVEMENT ---
 // Downward push
 var down_dir = 270; // down in GameMaker
@@ -53,20 +54,15 @@ camera_set_view_pos(cam, target_x, target_y);
 
 /// --- LEVEL UP AND HP GAIN ---
 var new_level = floor(global.points / points_per_level) + 1;
-if (new_level > level)
+
+var required_points = level * points_per_level;
+
+if (global.points >= required_points)
 {
-    level = new_level;
-	show_debug_message("NEW LEVEL!");
+    level += 1;
 
-    // Only increase HP if below max
-    if (hp < max_hp)
-    {
-        hp += 1;
-    }
-
-    // Growth effect
-    image_xscale += 0.05;
-    image_yscale = image_xscale;
+    global.game_paused = true;
+    instance_create_layer(0,0,"Instances",obj_levelup_menu);
 }
 
 /// --- BOSS SPAWN (optional) ---
@@ -96,3 +92,5 @@ if (attack_cooldown > 0) attack_cooldown -= 1;
 if (hp <= 0) {
 	game_over_func()
 }
+
+max_hp = max(5, max_hp);

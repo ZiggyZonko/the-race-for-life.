@@ -1,2 +1,2 @@
-value = 50;
+value = 50
 sprite_index = Zinc;
