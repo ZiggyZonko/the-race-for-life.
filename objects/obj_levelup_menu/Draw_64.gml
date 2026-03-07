@@ -31,8 +31,8 @@ for (var i = 0; i < button_count; i++)
     var bx = start_x + i * (button_width + spacing);
 
     // Draw button rectangle
-    draw_set_colour(c_white);
-    draw_rectangle(bx, button_y, bx + button_width, button_y + button_height, false);
+    draw_set_colour(make_colour_rgb(230,230,230));
+    draw_roundrect(bx, button_y, bx + button_width, button_y + button_height, false);
 
     // Determine text
     var text = "";

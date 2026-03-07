@@ -92,5 +92,3 @@ if (attack_cooldown > 0) attack_cooldown -= 1;
 if (hp <= 0) {
 	game_over_func()
 }
-
-max_hp = max(5, max_hp);
