@@ -42,7 +42,7 @@ biomes = [
     }
 ];
 
-biome_height = 5000;
+biome_height = 7500;
 
 
 // --- TILEMAPS ---
@@ -60,3 +60,13 @@ next_chunk_y += chunk_height_pixels;
 current_biome_index = -1;
 biome_message = "";
 biome_message_timer = 0;
+
+//Boss
+global.boss_spawned = false;
+global.boss_defeated = false;
+boss_depth = 2000;
+boss_warning_timer = 0
+
+shake_timer = 0;
+shake_strength = 0;
+pointsgiven = 0;

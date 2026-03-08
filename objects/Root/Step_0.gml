@@ -24,7 +24,8 @@ if (dist >= trail_spacing)
 {
     var trail_dir = point_direction(last_trail_x, last_trail_y, x, y);
     var new_x = last_trail_x + lengthdir_x(trail_spacing, trail_dir);
-    var new_y = last_trail_y + lengthdir_y(trail_spacing, trail_dir);
+    //var new_y = last_trail_y + lengthdir_y(trail_spacing, trail_dir);
+	var new_y = last_trail_y + lengthdir_y(trail_spacing, trail_dir);
 
     array_insert(trail, 0, [new_x, new_y]);
 
@@ -62,13 +63,10 @@ if (global.points >= required_points)
     level += 1;
 
     global.game_paused = true;
+	if (hp < max_hp) {
+		hp+= 1;
+	}
     instance_create_layer(0,0,"Instances",obj_levelup_menu);
-}
-
-/// --- BOSS SPAWN (optional) ---
-if (global.points >= 1000 && !instance_exists(obj_boss))
-{
-    instance_create_layer(x, y + 800, "Instances", obj_boss);
 }
 
 /// --- INVINCIBILITY FLASH ---
