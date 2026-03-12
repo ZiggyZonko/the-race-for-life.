@@ -1,5 +1,5 @@
 /// --- Move the projectile ---
-if (global.game_paused) exit;
+if (global.game_paused || global.game_over) exit;
 x += lengthdir_x(speed, direction);
 y += lengthdir_y(speed, direction);
 

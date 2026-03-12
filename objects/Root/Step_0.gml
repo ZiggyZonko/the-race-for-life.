@@ -1,4 +1,4 @@
-if (global.game_paused) exit;
+if (global.game_paused || global.game_over) exit;
 /// --- MOVEMENT ---
 // Downward push
 var down_dir = 270; // down in GameMaker

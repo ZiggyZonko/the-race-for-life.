@@ -1,4 +1,4 @@
-if (global.game_paused) exit;
+if (global.game_paused || global.game_over) exit;
 life--;
 
 if (life <= 0)

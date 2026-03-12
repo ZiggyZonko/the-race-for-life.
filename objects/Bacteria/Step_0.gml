@@ -1,4 +1,4 @@
-if (global.game_paused) exit;
+if (global.game_paused || global.game_over) exit;
 var target = instance_nearest(x, y, Root);
 
 if (instance_exists(target)) {

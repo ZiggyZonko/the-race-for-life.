@@ -1,4 +1,21 @@
-if (global.game_paused) exit;
+if (global.game_paused || global.game_over) exit
+
+// --- GAME OVER CONTROLS ---
+if (global.game_over)
+{
+    if (keyboard_check_pressed(ord("R")))
+    {
+        game_restart();
+    }
+
+    if (keyboard_check_pressed(vk_escape))
+    {
+        room_goto(MainMenu);
+    }
+
+    // stop rest of game logic
+    exit;
+}
 
 if (shake_timer > 0)
 {

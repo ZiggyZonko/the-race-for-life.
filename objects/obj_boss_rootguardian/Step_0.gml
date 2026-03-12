@@ -1,3 +1,4 @@
+if(global.game_over || global.game_paused) exit;
 if (!instance_exists(target)) exit;
 
 var player = instance_find(Root,0);

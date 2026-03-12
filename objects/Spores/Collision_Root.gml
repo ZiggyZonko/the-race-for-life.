@@ -6,10 +6,9 @@ with (Root) {
         invincible = true;
         invincible_timer = invincible_time;
         
-        if (hp <= 0) {
-            show_message("The seed has died...");
-            game_restart();
-        }
+		if (hp <= 0) {
+			game_over_func()
+		}
     }
 }
 
